@@ -45,10 +45,11 @@ while True:
         
 
         cv2.imshow("Result", img)
+        #REMEMBER to create a folder named scanned_images in the same directory in which your code is saved.
         cv2.imwrite("scanned_images/PlateNo_" + str(count) + ".jpg", newimg)
-        path12="C:\\Users\\LENOVO\\Desktop\\Computer\\PROJECTS\\ML\\NUMBER PLATE\\scan\\noPlate_"+str(count)+".jpg"
+        path12="C:\\Users\\LENOVO\\Desktop\\Number Plate Project\\scanned_images\\PlateNo_"+str(count)+".jpg"
         if os.path.exists(path12)==True:
-            Image1 = Image.open("C:\\Users\\LENOVO\\Desktop\\Computer\\PROJECTS\\ML\\NUMBER PLATE\\scan\\noPlate_%d.jpg"%count)
+            Image1 = Image.open("C:\\Users\\LENOVO\\Desktop\\Number Plate Project\\scanned_images\\PlateNo_%d.jpg"%count)
             pytesseract.tesseract_cmd=path_to_tesseract
             text = pytesseract.image_to_string(Image1)
             print(text[:-1])
