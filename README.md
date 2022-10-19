@@ -1,5 +1,5 @@
 # Escaping-Criminal-Car-Tracking-System-Using-Number-Plate-Detection-and-Image-to-Text-Approch
-This Project is completed by Jayvardhan and Khushvardhan Bhardwaj.
+This Project is completed by Jayvardhan and Khushvardhan Bhardwaj and Pakhi Gupta.
 A reference/help for the same was taken from the Github account of Shaily priya and also from Geeks For Geeks website.
 This Project will scan the number plates from the Surveillance camera and save them in a jpg format, followed by scanning and extracting the text in those images into a text file.
 - The code starts by importing the necessary libraries.
